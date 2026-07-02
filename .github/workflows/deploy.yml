@@ -24,3 +24,6 @@ jobs:
               run: |
                 cd Sena
                 pytest apl/tests.py --ds=config.settings
+
+
+                #fgh
