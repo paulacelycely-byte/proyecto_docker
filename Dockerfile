@@ -16,4 +16,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt .  /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
-#55
+COPY . /app/
+
+EXPOSE 8000
+
+CMD ["python", "Sena/manage.py", "runserver", "0.0.0.0:8000"]
